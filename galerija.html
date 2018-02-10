@@ -26,12 +26,12 @@
 <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" padding-top:="" 0px;="" padding-bottom:="" height:="" 30px;="" id="mainNav" style="
     padding-bottom: 0px;
     padding-top: 0px;
-    height: 30px;
+    height: 80px;
 ">
 <img src="Images/logo3.jpg" alt="" style="
     box-shadow: 0 0px 0px 10px black;
-    width: 25px;
-    height: 25px;
+    width: 60px;
+    height: 60px;
 ">
     <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Gnijev Andjela</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,7 +72,7 @@
 </nav>
 
 
-
+<!--
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -127,6 +127,226 @@ function showDivs(n) {
      x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
+}
+</script>
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 1;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+    <img src="Images/Picture001.jpg" style="width:100%;padding-top: 30px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+    <img src="Images/Picture01.jpg" style="width:100%;padding-top: 30px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+    <img src="Images/Picture1.jpg" style="width:100%;padding-top: 30px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
+    <img src="Images/Picture8.jpg" style="width:100%;padding-top: 30px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+    <img src="Images/Picture7.jpg" style="width:100%;padding-top: 30px;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+    <img src="Images/Picture6.jpg" style="width:100%;padding-top: 30px;">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+    <img src="Images/Picture5.jpg" style="width:100%;padding-top: 30px;">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+    <img src="Images/Picture4.jpg" style="width:100%;padding-top: 30px;">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+    <img src="Images/Picture3.jpg" style="width:100%;padding-top: 30px;">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+    <img src="Images/Picture2.jpg" style="width:100%;padding-top: 30px;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Images/Picture001.jpg" style="width: 100%;padding-bottom: 4px;padding-left: 4px;padding-top: 4px;padding-right: 4px;height: 100%;" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Picture01.jpg" style="width: 100%;padding-bottom: 4px;padding-left: 4px;padding-top: 4px;padding-right: 4px;height: 100%;" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Picture1.jpg" style="width: 100%;padding-bottom: 4px;padding-left: 4px;padding-top: 4px;padding-right: 4px;height: 100%;" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Picture8.jpg" style="width: 100%;padding-bottom: 4px;padding-left: 4px;padding-top: 4px;padding-right: 4px;height: 100%;" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Picture7.jpg" style="width: 100%;padding-bottom: 4px;padding-left: 4px;padding-top: 4px;padding-right: 4px;height: 100%;" onclick="currentSlide(5)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Picture6.jpg" style="width: 100%;padding-bottom: 4px;padding-left: 4px;padding-top: 4px;padding-right: 4px;height: 100%;" onclick="currentSlide(6)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Picture5.jpg" style="width: 100%;padding-bottom: 4px;padding-left: 4px;padding-top: 4px;padding-right: 4px;height: 100%;" onclick="currentSlide(7)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Picture4.jpg" style="width: 100%;padding-bottom: 4px;padding-left: 4px;padding-top: 4px;padding-right: 4px;height: 100%;" onclick="currentSlide(8)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Picture3.jpg" style="width: 100%;padding-bottom: 4px;padding-left: 4px;padding-top: 4px;padding-right: 4px;height: 100%;" onclick="currentSlide(9)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Images/Picture2.jpg" style="width: 100%;padding-bottom: 4px;padding-left: 4px;padding-top: 4px;padding-right: 4px;height: 100%;" onclick="currentSlide(10)" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
 
