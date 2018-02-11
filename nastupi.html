@@ -35,11 +35,9 @@
     height: 60px;
 ">
     <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Gnijev Andjela</a>
-
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"> </span>
+      <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item  px-lg-4">
@@ -62,16 +60,16 @@
 
 
 
-        <li class="nav-item active px-lg-4">
+        <li class="nav-item px-lg-4">
           <a class=" nav-link text-uppercase text-expanded dropdown-toggle" data-toggle="dropdown"> Multimedija </a>
           <div class="dropdown-menu"  >
             <a class= " dropdown-item  text-expanded font-weight-bold "  href="audio.html" > Audio </a>
             <a class= "dropdown-item  text-expanded font-weight-bold "  href="video.html" > Video </a>
         </li>
-        <li class="nav-item px-lg-4">
+        <li class="nav-item active px-lg-4">
           <a class="nav-link text-uppercase text-expanded" href="nastupi.html"> Nastupi </a>
         </li>
-        <li class="nav-item px-lg-4">
+        <li class="nav-item  px-lg-4">
           <a class="nav-link text-uppercase text-expanded" href="kontakt.html"> Kontakt </a>
         </li>
 
@@ -80,65 +78,106 @@
   </div>
 </nav>
 
-
-<video controls="" name="media" style="
-    width: 320px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-"><source src="video/8.webm" type="video/webm"></video>
-  <video controls="" name="media" style="
-    width: 320px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-"><source src="video/3.webm" type="video/webm"></video>
-
-  <video controls="" name="media" style="
-      width: 320px;
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 20px;
-  "><source src="video/2.webm" type="video/webm"></video>
-    <video controls="" name="media" style="
-    width: 320px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-"><source src="video/7.webm" type="video/webm"></video>
-  <video controls="" name="media" style="
-  width: 320px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  "><source src="video/6.webm" type="video/webm"></video>
-    <video controls="" name="media" style="
-    width: 320px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-"><source src="video/4.webm" type="video/webm"></video>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
 
 
 
-
-
-
-
-  </div>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="Images/nastup1.jpg" style="width:100%">
+  <img class="mySlides" src="Images/nastup2.jpg" style="width:100%">
+  <img class="mySlides" src="Images/nastup3.jpg" style="width:100%">
 </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 7000); // Change image every 7 seconds
+}
+</script>
+
+
+
+
+
+
+
+
+<section class="page-section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded">
+          <h2 class="section-heading mb-5">
+            <span class="section-heading-upper"> Kontakt </span>
+
+          </h2>
+          <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+            <li class="list-unstyled-item list-hours-item d-flex">
+              Telefon:
+              <span class="ml-auto">0123456789</span>
+            </li>
+            <li class="list-unstyled-item list-hours-item d-flex">
+              Adresa:
+              <span class="ml-auto">Bratunac</span>
+            </li>
+            <li class="list-unstyled-item list-hours-item d-flex">
+              Е-mail:
+              <span class="ml-auto">gnijevandjela@gmail.com</span>
+            </li>
+            <li class="list-unstyled-item list-hours-item d-flex">
+              Web adresa:
+              <span class="ml-auto">gnijevandjela</span>
+            </li>
+
+
+          </ul>
+          <p class="address mb-5">
+            <em>
+              <strong>Gnijev Andjela Bratunac</strong>
+            </em>
+          </p>
+          <br>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="fm-1 social">
+  <p class="aligncenter"><a href="https://www.facebook.com/gnijevandjela/" title="facebook" target="_blank" rel="noopener"><img src="http://kolo.rs/wp-content/uploads/2015/11/facebook.png" alt="" scale="0"></a>
+    <a href="https://www.youtube.com/user/gnijevandjela" title="youtube" target="_blank" rel="noopener"><img src="http://kolo.rs/wp-content/uploads/2015/11/youtube.png" alt="" scale="0"></a></p>
+</div>
+
+
+
 
 
 
 <script src="vendor/jquery/jquery.min.js"></script> <!-- povezivanje sa jQuery-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script> <!-- Povezivanje sa popper.js -->
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script> <!-- Povezivanje sa bootsrtapom -->
+
+
 
 </body>
 </html>
