@@ -1,12 +1,16 @@
 h1, h2, h3{
   font-family: 'Raleway', sans-serif;
   text-align: center;
+    font-style: italic;
 }
 
 h4{
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  color: orange;
+  color: #FF0000;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 nav img{
