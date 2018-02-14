@@ -1,5 +1,12 @@
 h1, h2, h3{
   font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+h4{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: orange;
 }
 
 nav img{
@@ -71,6 +78,7 @@ body {
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
   color: #ec7913f2;
+
 }
 
 @media (min-width: 992px) {
@@ -283,9 +291,12 @@ body {
 
 
 #audio {
-  margin-left: 2rem;
-  margin-top: 2rem;
+
+  margin-left: 3rem;
+  margin-top: 0rem;
+
 }
+
 
 p.thick {
     font-weight: bold;

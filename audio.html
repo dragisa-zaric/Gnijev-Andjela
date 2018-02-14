@@ -63,12 +63,16 @@
 
 
 
-        <li class="nav-item active px-lg-4">
-          <a class=" nav-link  text-uppercase text-expanded dropdown-toggle" data-toggle="dropdown"> Multimedija </a>
-          <div class="dropdown-menu"  >
-            <a class= " dropdown-item  text-expanded font-weight-bold "  href="audio.html" > Audio </a>
-            <a class= "dropdown-item  text-expanded font-weight-bold "  href="video.html" > Video </a>
-        </li>
+        <li class="nav-item active  px-lg-4 show">
+              <a class=" nav-link  text-uppercase text-expanded dropdown-toggle" data-toggle="dropdown" aria-expanded="true" style="
+        padding-bottom: 0px;
+    "> Multimedija </a>
+              <div class="dropdown-menu ">
+                <a class=" dropdown-item  text-expanded font-weight-bold " href="audio.html" style="
+        padding-top: 0px;
+    "> Audio </a>
+                <a class="dropdown-item  text-expanded font-weight-bold " href="video.html"> Video </a>
+            </div></li>
         <li class="nav-item px-lg-4">
           <a class="nav-link text-uppercase text-expanded" href="nastupi.html"> Nastupi </a>
         </li>
@@ -81,33 +85,58 @@
   </div>
 </nav>
 
-<div class="nas">
-  <h1> Audio </h1>
-</div>
-<br>
+<div class="row" >
 
 
+
+<div class="col-sm-4">
+  <h4>Sjećanje na cvijet</h4>
 <audio id="audio" controls>
   <source src="mp3/1.mp3" type="audio/mpeg">
 </audio>
+</div>
 
+<div class="col-sm-4">
+  <h4>Snijegovi</h4>
 <audio id="audio" controls>
   <source src="mp3/2.mp3" type="audio/mpeg">
 </audio>
+</div>
 
+<div class="col-sm-4">
+  <h4>Kraj</h4>
 <audio id="audio" controls>
-  <source src="mp3/3.mp3" type="audio/mpeg">
+  <source src="mp3/7.mp3" type="audio/mpeg">
 </audio>
+</div>
 
+<div class="col-sm-4">
+  <h4>Čedna gradska lica</h4>
 <audio id="audio" controls>
   <source src="mp3/4.mp3" type="audio/mpeg">
 </audio>
+</div>
+
+<div class="col-sm-4">
+  <h4>Gde da pobegnem</h4>
 <audio id="audio" controls>
   <source src="mp3/5.mp3" type="audio/mpeg">
 </audio>
+</div>
+
+<div class="col-sm-4">
+  <h4>Live Futog 2010</h4>
 <audio id="audio" controls>
   <source src="mp3/6.mp3" type="audio/mpeg">
 </audio>
+</div>
+
+<div class="col-sm-4">
+  <h4>Povedi me</h4>
+<audio id="audio" controls>
+  <source src="mp3/3.mp3" type="audio/mpeg">
+</audio>
+</div>
 
 
 <script src="vendor/jquery/jquery.min.js"></script> <!-- povezivanje sa jQuery-->
