@@ -28,13 +28,14 @@
     padding-bottom: 0px;
     padding-top: 0px;
     height: 80px;
+
 ">
 <img src="Images/logo3.jpg" alt="" style="
     box-shadow: 0 0px 0px 10px black;
     width: 60px;
     height: 60px;
 ">
-    <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Gnijev Andjela</a>
+    <a class="navbar-brand text-uppercase text-expanded font-weight-bold  d-lg-none" href="#">Gnijev Andjela</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -59,16 +60,16 @@
         </li>
 
 
-        <li class="nav-item  px-lg-4 show">
-              <a class=" nav-link  text-uppercase text-expanded dropdown-toggle" data-toggle="dropdown" aria-expanded="true" style="
-        padding-bottom: 0px;
-      "> Multimedija </a>
-              <div class="dropdown-menu ">
-                <a class=" dropdown-item  text-expanded font-weight-bold " href="audio.html" style="
-        padding-top: 0px;
-      "> Audio </a>
-                <a class="dropdown-item  text-expanded font-weight-bold " href="video.html"> Video </a>
-            </div></li>
+        <div class="dropdown">
+          <button class="dropbtn text-uppercase font-weight-bold" style="
+            padding-top: 8px;
+            padding-bottom: 0px;
+        ">Multimedija</button>
+          <div class="dropdown-content">
+            <a href="audio.html">Audio</a>
+            <a href="video.html">Video</a>
+          </div>
+        </div>
         <li class="nav-item active px-lg-4">
           <a class="nav-link text-uppercase text-expanded" href="nastupi.html"> Nastupi </a>
         </li>
