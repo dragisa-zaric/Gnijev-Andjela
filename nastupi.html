@@ -82,98 +82,63 @@
   </div>
 </nav>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.mySlides {display:none;}
-</style>
-<body>
 
+<div class="w3-content" style="margin-top:35px; width: 560px height: 480px;">
+  <img class="mySlides" src="Images/nastup1.jpg" style="width: 560px; margin-left:350px; height: 480px;">
+  <img class="mySlides" src="Images/nastup2.jpg" style="width: 560px; margin-left:350px; height: 480px;">
+  <img class="mySlides" src="Images/nastup3.jpg" style="width: 560px; margin-left:350px; height: 480px;">
+</div>
 
-
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="Images/nastup1.jpg" style="width:100%">
-  <img class="mySlides" src="Images/nastup2.jpg" style="width:100%">
-  <img class="mySlides" src="Images/nastup3.jpg" style="width:100%">
+<div class="w3-center" style="
+    margin-left: 550px;
+">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)" style="
+      margin-left: 25px;
+  ">1</button>
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button>
 </div>
 
 <script>
-var myIndex = 0;
-carousel();
+var slideIndex = 1;
+showDivs(slideIndex);
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 7000); // Change image every 7 seconds
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
 }
 </script>
 
 
+<button class="button button2" style="
+    margin-left: 350px;
+    width: 564px;"
 
-
-
-
-
-
-<section class="page-section cta">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-9 mx-auto">
-        <div class="cta-inner text-center rounded">
-          <h2 class="section-heading mb-5">
-            <span class="section-heading-upper"> Kontakt </span>
-
-          </h2>
-          <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-            <li class="list-unstyled-item list-hours-item d-flex">
-              Telefon:
-              <span class="ml-auto">0123456789</span>
-            </li>
-            <li class="list-unstyled-item list-hours-item d-flex">
-              Adresa:
-              <span class="ml-auto">Bratunac</span>
-            </li>
-            <li class="list-unstyled-item list-hours-item d-flex">
-              Е-mail:
-              <span class="ml-auto">gnijevandjela@gmail.com</span>
-            </li>
-            <li class="list-unstyled-item list-hours-item d-flex">
-              Web adresa:
-              <span class="ml-auto">gnijevandjela</span>
-            </li>
-
-
-          </ul>
-          <p class="address mb-5">
-            <em>
-              <strong>Gnijev Andjela Bratunac</strong>
-            </em>
-          </p>
-          <br>
-
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<div class="fm-1 social">
-  <p class="aligncenter"><a href="https://www.facebook.com/gnijevandjela/" title="facebook" target="_blank" rel="noopener"><img src="http://kolo.rs/wp-content/uploads/2015/11/facebook.png" alt="" scale="0"></a>
-    <a href="https://www.youtube.com/user/gnijevandjela" title="youtube" target="_blank" rel="noopener"><img src="http://kolo.rs/wp-content/uploads/2015/11/youtube.png" alt="" scale="0"></a></p>
-</div>
-
-
-
+ onclick="window.location.href='kontakt.html'"
+     >Kontakt</button>
 
 
 
